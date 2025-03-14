@@ -1,8 +1,7 @@
 'use client';
-// import "@/app/globals.css";
 
 import { ReactNode } from "react";
-import Home from "@/app/page";
+
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (

@@ -1,9 +1,7 @@
 "use client";
 import '@/app/globals.css'
 import { useEffect, useState, useRef } from "react";
-import { TypeAnimation } from "react-type-animation";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import About from "@/components/about";
@@ -20,8 +18,6 @@ export default function Home() {
   
   // For parallax effect
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 1000], [0, 300]);
-  const y2 = useTransform(scrollY, [0, 2000], [0, -200]);
   
   useEffect(() => {
     setMounted(true);
