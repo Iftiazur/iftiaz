@@ -60,19 +60,22 @@ export default function Hero() {
       </div>
 
       {/* Skills Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-        className="text-lg md:text-xl text-gray-300 max-w-4xl whitespace-nowrap overflow-hidden"
-      >
-        <span className="inline-block px-6 py-2 bg-black/50 backdrop-blur-sm border border-pink-500/20 rounded-lg">
-          <span className="text-pink-500">Python</span> |{" "}
-          <span className="text-blue-400">Machine Learning</span> |{" "}
-          <span className="text-pink-500">Computer Vision</span> |{" "}
-          <span className="text-blue-400">Data Analytics & Visualization</span>
-        </span>
-      </motion.div>
+      {/* Skills Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-lg md:text-xl text-gray-300 max-w-xs sm:max-w-md md:max-w-2xl text-center"
+        >
+          <span className="inline-block px-6 py-2 bg-black/50 backdrop-blur-sm border border-pink-500/20 rounded-lg">
+            <span className="text-pink-500">Python</span> |{" "}
+            <span className="text-blue-400">Machine Learning</span> |{" "}
+            <span className="text-pink-500">Computer Vision</span> |{" "}
+            <span className="text-blue-400">Data Analytics & Visualization</span>
+          </span>
+        </motion.div>
+
+      
 
       {/* About Me Button */}
       <div className="relative z-10 mt-6">
