@@ -2,12 +2,13 @@
 
 import type { NextApiRequest, NextApiResponse } from "next";
 
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
 
-  const FORMSPREE_ENDPOINTS = process.env.FORMSPREE_ENDPOINT;
+  const FORMSPREE_ENDPOINTS = process.env.FORMSPREE_ENDPOINTS;
 
   if (!FORMSPREE_ENDPOINTS) {
     return res.status(500).json({ error: "Server misconfiguration: Missing FORMSPREE_ENDPOINT" });
