@@ -7,14 +7,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ error: "Method Not Allowed" });
   }
 
-  const FORMSPREE_ENDPOINT = process.env.FORMSPREE_ENDPOINT;
+  const FORMSPREE_ENDPOINTS = process.env.FORMSPREE_ENDPOINT;
 
-  if (!FORMSPREE_ENDPOINT) {
+  if (!FORMSPREE_ENDPOINTS) {
     return res.status(500).json({ error: "Server misconfiguration: Missing FORMSPREE_ENDPOINT" });
   }
 
   try {
-    const response = await fetch(FORMSPREE_ENDPOINT, {
+    const response = await fetch(FORMSPREE_ENDPOINTS, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(req.body),
