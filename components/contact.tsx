@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
+
 export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
@@ -33,7 +34,7 @@ export default function Contact() {
     setError("");
     
     try {
-      const response = await fetch("https://formspree.io/f/xldjewkq", {
+      const response = await fetch('/api/contact',{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formState),
