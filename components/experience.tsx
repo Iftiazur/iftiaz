@@ -6,11 +6,11 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 const experiences = [
   {
     id: 1,
-    title: "Python Developer Intern",
-    company: "Tech Booster",
-    location: "Guwahati, India",
-    period: "June 2023 - July 2023",
-    description: "Developed a face recognition-based authentication and time tracking application with an emotion detection feature. Implemented a real-time face detection and recognition system using LBPH classifiers. Created an XML-based dataset storage mechanism for face comparisons. Integrated a dashboard for time and emotion tracking, leveraging the FER-13 dataset."
+    title: "LLM Application Developer",
+    company: "RedyHire",
+    location: "Bengaluru, Karnataka, India",
+    period: "Present",
+    description: "Developing an automated YAML generation system leveraging GPT-4 through Azure OpenAI for Assesment parsing. Applied advanced prompt engineering, implemented token management and chunk-wise data processing techniques. Improved system accuracy and reliability for structured data extraction"
   },
   {
     id: 2,
@@ -19,7 +19,16 @@ const experiences = [
     location: "KV Panbari, India",
     period: "Nov 2024",
     description: "Taught Python programming and AI/ML concepts as part of NIELIT’s AI/ML and Python Workshop. Utilized tools like Google’s Teachable Machine and AI for Ocean (Code.org) to enhance understanding. Achieved excellent student performance in evaluations at NIELIT Kokrajhar."
+  },
+  {
+    id: 3,
+    title: "Python Developer Intern",
+    company: "Tech Booster",
+    location: "Guwahati, India",
+    period: "June 2023 - July 2023",
+    description: "Developed a face recognition-based authentication and time tracking application with an emotion detection feature. Implemented a real-time face detection and recognition system using LBPH classifiers. Created an XML-based dataset storage mechanism for face comparisons. Integrated a dashboard for time and emotion tracking, leveraging the FER-13 dataset."
   }
+  
 ];
 
 
